@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Entry Project</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <h1 id="logo">Zain..</h1>
+        <ul>
+          <li>
+            <a href="#iptv"> <i class="fa-solid fa-film"></i>IPTV</a>
+          </li>
+          <li><a href="#netflix">Netflix</a></li>
+          <li><a href="#prime">Prime Video</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--IPTV Section -->
+      <section id="iptv" class="container glass border-b">
+        <div class="form">
+          <div class="form-table round border">
+            <h2>IPTV Form</h2>
+            <div class="username">
+              <label>Username:</label>
+              <input type="text" id="user-input" />
+              <p class="error" id="error-elem"></p>
+            </div>
+            <div class="password">
+              <label>Password:</label>
+              <input type="text" id="password-input" />
+              <p class="error" id="error-elem2"></p>
+            </div>
+            <div class="server">
+              <label>Server:</label>
+              <select name="server" id="server" default="Server">
+                <option id="hybrid" value="hybrid">Hybrid</option>
+                <option id="dream" value="dream">Dream</option>
+                <option id="fariya" value="fariya">Fariya</option>
+              </select>
+            </div>
+            <button class="form-table-submit" id="form-submit">Submit</button>
+          </div>
+          <div class="form-data round border gap-margin">
+            <div class="form-data-container">
+              <textarea
+                name="text"
+                id="iptv-text"
+                cols="100"
+                rows="30"
+                readonly
+              ></textarea>
+              <button class="copy-btn" id="copy">
+                <i class="fa-regular fa-copy"></i>Copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Netflix Section -->
+      <section id="netflix" class="container glass border-lb">
+        <div class="net-form">
+          <div class="net-table-data border round">
+            <h2>Netflix Form</h2>
+            <div class="net-email">
+              <label class="net-label">Email:</label>
+              <input type="email" class="net-input" id="email-input" />
+              <p class="net-error" id="net-email-error"></p>
+            </div>
+            <div class="net-password">
+              <label class="net-label">Password:</label>
+              <input type="text" class="net-input" id="pass-input" />
+              <p class="net-error" id="net-pass-error"></p>
+            </div>
+            <div class="net-profile">
+              <label class="net-label">Profile:</label>
+              <input type="text" class="net-input" id="profile-input" />
+              <p class="net-error" id="net-profile-error"></p>
+            </div>
+            <div class="net-pin">
+              <label class="net-label">PIN</label>
+              <input
+                type="number"
+                class="net-input"
+                id="pin-input"
+                maxlength="4"
+              />
+              <p class="net-error" id="net-pin-error"></p>
+            </div>
+            <button class="net-submit" id="netflix-submit">Submit</button>
+          </div>
+          <div class="net-text-area gap-margin border round">
+            <textarea
+              name="netflix"
+              id="net-text"
+              cols="100"
+              rows="30"
+              readonly
+            ></textarea>
+            <button class="net-copy" id="netflix-copy">Copy</button>
+          </div>
+        </div>
+      </section>
+      <!--Prime Video Section -->
+      <section id="prime" class="container glass border-full"></section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
